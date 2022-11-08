@@ -1,38 +1,175 @@
-.App {
-  text-align: center;
+
+
+/* about 
+big font size responsive to screen size
+left alligned within the box with a margin
+*/ 
+.about {
+  font-size: 2.5em;
+  margin-left: 5%;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+
+.about li {
+  /* smaller text size */
+  font-size: 0.7em;
+  display: inline-block; 
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0.5rem;
+  margin: 0.2rem;
+  border-radius: 5px;
+  background-color: black;
+  color: white;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+/* navbar is spread across left to right sticky scroll always on top*/
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  height: 10vh;
+  color: white;
+  position: sticky;
+  top: 0;
+  z-index: 1;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+/* a has a box for eaach element */
+.navbar a {
+  color: rgb(255, 255, 255);
+  text-decoration: none;
+  font-size: 1.2rem;
+  padding: 1rem;
+  border-radius: 25px;
+}
+
+.navbar a:hover {
+  background-color: #000000;
+  border-radius: 25px;
+}
+
+/* each element in li in skills has to be horizontally aligned with good spaces in between */
+.skills li {
+  display: inline-block; 
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  padding: 1rem;
+  margin: 1rem;
+  border-radius: 10px;
+  background-color: black;
+  color: white;
+}
+
+/* control the size of images in landing-links responsive*/
+.landing-links img {
+  width: 100%;
+  max-width: 100px;
+  height: auto;
+  margin: 2rem;
+}
+
+
+/* project is responsive, black background, white text, round border */
+.project {
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
+  background-image: linear-gradient(to right, #000000, #434343);
+  color: white;
+  border-radius: 10px;
+  padding: 1rem;
+  margin: 1rem;
+}
+
+/* centered with black background and white text */
+.landing {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  height: 100vh;
+  color: white;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+/* each experience is inside a box with round border  */
+.experience {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background-image: linear-gradient(to right, #000000, #434343);
+  color: white;
+  border-radius: 10px;
+  padding: 1rem;
+  margin: 1rem;
+}
+
+/* about is center allight with white text, responsive */
+.about {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  height: 100vh;
+  color:white;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+
+/* for project and experience technologies hide list bullet point, and horizontally display values */
+.project-technologies li {
+  display: inline-block;
+  list-style-type: none;
+  padding: 1rem;
+  margin: 1rem;
+  border-radius: 10px;
+  background-color: black;
   color: white;
 }
 
-.App-link {
-  color: #61dafb;
+.experience-technologies li{
+  display: inline-block;
+  list-style-type: none;
+  padding: 1rem;
+  margin: 1rem;
+  border-radius: 10px;
+  background-color: black;
+  color: white;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+/* skill */
+.skills{
+  display: flex;
+  flex-direction: column;
+  align-items: left;
+  width: 100%;
+  height: 100vh;
+  background-image: linear-gradient(to top, #000000, #434343);;
+  color: white;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.skills li{
+  background-color: black;
+  color: white;
 }
